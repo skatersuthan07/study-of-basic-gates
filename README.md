@@ -46,7 +46,7 @@ Y= A⊕B
 
 **Ex-NOR gate**
 
-The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion
+The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
 Y= A⊕B
 
 **Procedure** 
@@ -65,27 +65,36 @@ Y= A⊕B
 **PROGRAM**
 
 ```
-module ex1(a,b,y1,y2,y3,y4,y5,y6);
+module log_gat(a,b,c1,c2,c3,c4,c5,c6,c7);
 input a,b;
-output y1,y2,y3,y4,y5,y6;
-and g1(y1,a,b);
-or g2(y2,a,b);
-nand g3(y3,a,b);
-nor g4(y4,a,b);
-xor g5(y5,a,b);
-not g6(y6,a);
+output c1,c2,c3,c4,c5,c6,c7;
+not g1(c1,a);
+and g2(c2,a,b);
+or g3(c3,a,b);
+nand g4(c4,a,b);
+nor g5(c5,a,b);
+xor g6(c6,a,b);
+xnor g7(c7,a,b);
 endmodule
 ```
- 
+
 **Logic symbol & Truthtable**
-![gates](https://github.com/user-attachments/assets/b5281c84-946d-401f-86c0-cdc4d524cf4e)
+
+![WhatsApp Image 2025-11-12 at 10 47 23_dfcb1307](https://github.com/user-attachments/assets/e3d38741-8923-4f00-8393-39d8e674b12a)
 
 **RTL realization Output:** 
-<img width="2560" height="1308" alt="exx" src="https://github.com/user-attachments/assets/7c11531b-d461-4959-9489-032d29992cb1" />
+
+<img width="1920" height="1200" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/3d746cba-67b9-4a57-9d74-93ad19498eeb" />
+
 
 **RTL**
-<img width="2560" height="1378" alt="ee1" src="https://github.com/user-attachments/assets/19846fea-f5d6-46e4-bc30-b3ef4d809c40" />
+
+<img width="1920" height="1200" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/d4b0fa2f-42ec-4442-bc3a-cf1ec172ac17" />
+
 
 **Result:**
-The expected output hasbeen generated successfully
+
+All the logic gates and their corresponding truth table were successfully verified using Quartus II.
+
+
 
